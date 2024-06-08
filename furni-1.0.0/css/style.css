@@ -13,8 +13,9 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 28px;
-  color: #6a6a6a;
-  font-size: 14px;
+  
+  text-align: center;
+
   background-color: #eff2f1; }
 
 a {
@@ -31,7 +32,7 @@ a {
     font-weight: 600; }
 
 .custom-navbar {
-  background: #3b5d50 !important;
+  background: #241b35 !important;
   padding-top: 20px;
   padding-bottom: 20px; }
   .custom-navbar .navbar-brand {
@@ -64,7 +65,7 @@ a {
         bottom: 0;
         left: 8px;
         right: 8px;
-        background: #f9bf29;
+        background: #6c35de;
         height: 5px;
         opacity: 1;
         visibility: visible;
@@ -96,7 +97,7 @@ a {
         margin-right: 20px; }
 
 .hero {
-  background: #3b5d50;
+  background: #4d425f;
   padding: calc(4rem - 30px) 0 0rem 0; }
   @media (min-width: 768px) {
     .hero {
@@ -118,7 +119,7 @@ a {
       .hero h1 {
         font-size: 54px; } }
   .hero p {
-    color: rgba(255, 255, 255, 0.5);
+    color: #ffc7ff;
     margin-botom: 30px; }
   .hero .hero-img-wrap {
     position: relative; }
@@ -129,7 +130,7 @@ a {
       z-index: 2;
       max-width: 780px;
       left: -20px; }
-      @media (min-width: 768px) {
+      @media (min-width: 1448px) {
         .hero .hero-img-wrap img {
           right: 0px;
           left: -100px; } }
@@ -143,7 +144,11 @@ a {
         .hero .hero-img-wrap img {
           left: 0px;
           top: -80px;
-          right: -100px; } }
+          right: -100px;
+          width: 530px;
+          height: 590px;
+          
+          } }
     .hero .hero-img-wrap:after {
       content: "";
       position: absolute;
@@ -181,18 +186,18 @@ a {
       border-color: #314d43; }
   .btn.btn-secondary {
     color: #2f2f2f;
-    background: #f9bf29;
-    border-color: #f9bf29; }
+    background: #6c35de;
+    border-color: #6c35de; }
     .btn.btn-secondary:hover {
-      background: #f8b810;
-      border-color: #f8b810; }
+      background: #cb80ff;
+      border-color: #cb80ff; }
   .btn.btn-white-outline {
     background: transparent;
     border-width: 2px;
     border-color: rgba(255, 255, 255, 0.3); }
     .btn.btn-white-outline:hover {
-      border-color: white;
-      color: #ffffff; }
+      border-color: #cb80ff;
+      color: #cb80ff; }
 
 .section-title {
   color: #2f2f2f; }
