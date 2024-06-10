@@ -28,3 +28,28 @@ const loaded2 = (eventLoaded) => {
 };
 
 window.addEventListener('DOMContentLoaded', loaded2);
+
+const formulario = document.getElementById('contactForm');
+formulario.addEventListener('submit', (event) => {
+event.preventDefault();
+const nombre = document.getElementById('nombre').value;
+const email = document.getElementById('email').value;
+
+const datos = {
+nombre: nombre,
+email: email,
+
+};
+fetch('https://landing-e09fc-default-rtdb.firebaseio.com/collection.json', {
+method: 'POST',
+body: JSON.stringify(datos),
+headers: {
+'Content-Type': 'application/json'
+}
+})
+.then(respuesta => respuesta.json())
+.then(datos => {
+console.log(datos); // Imprimir la respuesta del servidor
+})
+.catch(error => console.error(error));
+});
